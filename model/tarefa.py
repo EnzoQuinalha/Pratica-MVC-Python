@@ -35,7 +35,7 @@ class Tarefa:
         params = (idTarefa,) # Precisa ser uma tupla!
         db.executar(sql, params)
         db.desconectar()
- 
+#  ############################################################
     def atualizarTarefa(self):
         """Atualiza uma tarefa existente no banco de dados."""
         db = Database()
