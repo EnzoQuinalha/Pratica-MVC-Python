@@ -19,7 +19,7 @@ def index():
 def delete(idTarefa):
     Tarefa.apagarTarefa(idTarefa)
     return redirect(url_for("index"))
- 
+#  ############################################################
 @app.route("/edit/<int:idTarefa>", methods=["GET", "POST"])
 def edit(idTarefa):
     if request.method == "POST":
